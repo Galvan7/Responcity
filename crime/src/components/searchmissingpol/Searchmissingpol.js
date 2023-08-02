@@ -23,7 +23,7 @@ const Searchmissingpol = () => {
     const { property, value } = pdata;
 
     try {
-      const response = await fetch(`http://localhost:5000/api/police/getmissing?${property}=${value}`);
+      const response = await fetch(`https://responcity.onrender.com/api/police/getmissing?${property}=${value}`);
       const data = await response.json();
 
       if (data.myMissingPerson.length > 0) {

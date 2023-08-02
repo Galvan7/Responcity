@@ -27,7 +27,7 @@ const PoliceSignUp = () => {
     e.preventDefault();
 
     const { name, email, serviceNumber, rank, password, cpassword } = pdata;
-    const res = await fetch("http://localhost:5000/api/police/register", {
+    const res = await fetch("https://responcity.onrender.com/api/police/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

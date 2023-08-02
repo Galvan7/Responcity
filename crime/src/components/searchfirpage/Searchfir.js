@@ -24,7 +24,7 @@ const Searchfir = () => {
     const { FIRno } = pdata;
 
     try {
-      const response = await fetch(`http://localhost:5000/api/users/getfir?FIRno=${FIRno}`);
+      const response = await fetch(`https://responcity.onrender.com/api/users/getfir?FIRno=${FIRno}`);
       const data = await response.json();
 
       if (data.length === 0) {

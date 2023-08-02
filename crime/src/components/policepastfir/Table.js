@@ -5,7 +5,7 @@ const Table = ({ data }) => {
     console.log(data.cadre)
     console.log(data._id)
     const changeCadre = async (e) => {
-        fetch(`http://localhost:5000/api/police/updateCadre/${data._id}`,{
+        fetch(`https://responcity.onrender.com/api/police/updateCadre/${data._id}`,{
             method: 'PATCH',
             headers: {
               'Content-Type': 'application/json'

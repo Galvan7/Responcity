@@ -57,7 +57,7 @@ export default function Firpage() {
         e.preventDefault();
         console.log("I am here")
         const {State, District, PoliceStation, FIRno, Date, Acts, OccurenceDay, OccurenceDate, OccurenceTime, InformationReceivedDate, InformationReceivedDay, InformationReceivedTime, DiaryReferenceEntryNo, DiaryReferenceTime, DirectionAndDistancefromPS, BeatNo, Address, ComplainantName, ComplainantFatherorHusbandName, ComplainantDateOfBirth, ComplainantNationality, ComplainantOccupation, ComplainantPassportNo, ComplainantDateofIssue, ComplainantPlaceOfIssue, ComplainantAddress, DetailsOfSuspected, cadre, ReasonsforDelay, ParticularsOfPropertiesStolenInvolved } = logdata;
-        const res = await fetch("http://localhost:5000/api/police/registerfir", {
+        const res = await fetch("https://responcity.onrender.com/api/police/registerfir", {
             method: "POST",
             headers: {
                 "content-Type": "application/json",

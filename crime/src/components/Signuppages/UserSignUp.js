@@ -26,7 +26,7 @@ const UserSignUp = () => {
     e.preventDefault();
 
     const { name, email, aadhar, password, cpassword } = udata;
-    const res = await fetch("http://localhost:5000/api/users/register", {
+    const res = await fetch("https://responcity.onrender.com/api/users/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

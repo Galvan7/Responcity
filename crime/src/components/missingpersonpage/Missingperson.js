@@ -33,7 +33,7 @@ export default function Missingperson() {
         e.preventDefault();
         console.log("I am here")
         const { name, age, place, aadhar, description, personreporting, found } = logdata;
-        const res = await fetch("http://localhost:5000/api/police/registermissing", {
+        const res = await fetch("https://responcity.onrender.com/api/police/registermissing", {
             method: "POST",
             headers: {
                 "content-Type": "application/json",

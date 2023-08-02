@@ -23,7 +23,7 @@ export default function Userlogin() {
     const senddata = async (e) => {
         e.preventDefault();
         const { email, otp } = logdata;
-        const res = await fetch("http://localhost:5000/api/users/verifyOtp", {
+        const res = await fetch("https://responcity.onrender.com/api/users/verifyOtp", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
